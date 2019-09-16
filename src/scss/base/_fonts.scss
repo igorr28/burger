@@ -1,0 +1,59 @@
+/*** Fonts ***/
+
+//font: 400 1rem FiraSans, sans-serif;
+//font-family: 'gagalinregular', sans-serif;
+
+
+
+@font-face {
+    font-family: 'gagalinregular';
+    src: url('../fonts/subset-Gagalin-Regular') format('woff2'),
+        url('../fonts/subset-Gagalin-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ubuntu';
+    src: url('../fonts/subset-Ubuntu-Bold.woff2') format('woff2'),
+        url('../fonts/subset-Ubuntu-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ubuntu';
+    src: url('../fonts/subset-Ubuntu-Light.woff2') format('woff2'),
+        url('../fonts/subset-Ubuntu-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ubuntu';
+    src: url('../fonts/subset-Ubuntu-Medium.woff2') format('woff2'),
+        url('../fonts/subset-Ubuntu-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ubuntu';
+    src: url('../fonts/subset-Ubuntu.woff2') format('woff2'),
+        url('../fonts/subset-Ubuntu.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'lifehackmedium';
+    src: url('../fonts/subset-Lifehack-Medium.woff2') format('woff2'),
+        url('../fonts/subset-Lifehack-Medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}

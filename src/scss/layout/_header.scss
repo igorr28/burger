@@ -1,0 +1,21 @@
+/*** Header ***/
+
+.header {
+    display: flex;
+    align-items: center;
+    @include ubuntu(500);
+    font-size: 0.812rem;
+    text-transform: uppercase;
+
+    @include media(830) {
+        font-size: 0.687rem;
+    }
+
+    @include tab {
+        font-size: 0.812rem;
+    }
+    
+    &__logo {
+         margin-right: auto;
+    }
+}

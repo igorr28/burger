@@ -1,0 +1,31 @@
+.cross {
+    width: 20px;
+    height: 4px;
+    border-radius: 2px;
+    position: relative;
+    transform: rotate(45deg);
+    cursor: pointer;
+    background-color: rgba(#fff, 0.7);
+    margin: 0.5rem 0;
+
+    &:after {
+        content: '';
+        display: block;
+        width: 4px;
+        height: 20px;
+        border-radius: 2px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(#fff, 0.7);
+    }
+    
+    &--red {
+        background-color: rgba(#e35028, 0.7);
+        
+        &:after{
+            background-color: rgba(#e35028, 0.7);
+        }
+    }
+}

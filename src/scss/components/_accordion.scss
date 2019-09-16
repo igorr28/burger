@@ -1,0 +1,33 @@
+.accordion {
+
+    &__list-horizontal {
+        display: flex;
+    }
+
+    &__content {
+        height: 0;
+        overflow: hidden;
+        transition: 1s;
+    }
+
+    &__content-horizontal {
+        width: 0;
+        overflow: hidden;
+        transition: 1.5s;
+
+    }
+
+    &__item {
+
+//        &:hover .accordion__content,
+        &--active .accordion__content {
+           // max-height: 400px;           
+        }
+
+//        &:hover .accordion__content-horizontal,
+        &--active .accordion__content-horizontal {
+           // width: 27.5rem;
+        }
+
+    }
+}

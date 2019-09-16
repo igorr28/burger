@@ -1,0 +1,57 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(#2f3234, 0.92);    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+
+
+    &__container {
+        width: 100%;
+        position: relative;
+        color: #2f3234;
+    }
+
+    &__comments {
+        width: 28.75rem;
+        background-color: #ffffff;
+        border-radius: 4px;
+        padding: 1.5rem 1.25rem;
+        margin: 0 auto;
+        
+
+        @include phone {
+            width: 85%;
+        }
+    }
+
+    &__order {
+        width: 16rem;
+        background-color: #ffffff;
+        border-radius: 4px;
+        padding: 1.25rem;
+        margin: 0 auto;
+        text-align: center;
+    
+        box-shadow: 0 0 40px rgba(0, 0, 1, 0.5);
+    }
+}
+
+.overlay-comments {
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 1.5rem;
+    }
+
+    &__title {}
+}
+
+.overlay-order__body {
+    margin-bottom: 1.25rem;
+}

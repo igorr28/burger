@@ -1,0 +1,27 @@
+.dropdown {
+    position: relative;
+}
+
+.dropdown:hover .dropdown__menu {
+    left: 100%;
+    opacity: 0.9;
+}
+
+.dropdown__menu {   
+    opacity: 0;
+    transition: opacity .5s;
+    position: absolute;
+    left: -9999px;
+    top: 0;
+    z-index: 5;    
+}
+
+//.dropdown__menu:after {
+//    content: '';
+//    display: block;
+//    width: 100%;
+//    height: 17px;
+//    position: absolute;
+//    left: 0;
+//    top: -17px;
+//}

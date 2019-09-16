@@ -1,0 +1,171 @@
+/*** Doing ***/
+
+.doing {
+    background: url(../img/doing/bg.jpg) center/cover no-repeat;
+
+    //    @include tab {
+    //            height: auto;
+    //        }
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        padding-top: 0.75rem;
+        padding-bottom: 2.5625rem;
+
+        @include phone {
+            padding-bottom: 2rem;
+        }
+    }
+
+    &__menu {
+        margin-left: 1rem;
+    }
+
+    &__content {
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+
+        @include tab {
+            width: 100%;
+            flex-direction: column;
+            justify-content: center;
+            align-self: center;
+        }
+    }
+
+    &__pic {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        margin-right: 0.75rem;
+
+
+        @include tab {
+            width: 48.88%;
+            margin-bottom: 1.5rem;
+            margin-right: 0;
+            min-width: 19rem;
+        }
+
+        @include phone {
+            width: 79.57%;
+        }
+    }
+
+    &__desc {
+        width: 50%;
+
+        @include tab {
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+    &__title {
+
+
+        @include tab {
+            margin-bottom: 1.5rem;
+        }
+
+        //        @include phone {
+        //            margin-bottom: 1.5rem;
+        //        }
+    }
+
+    &__subtitle {
+        color: #ffffff;
+        @include lifehack();
+        font-size: 4.062rem;
+        letter-spacing: -1.63px;
+        line-height: 1.11;
+
+        @include media (820) {
+            font-size: 3.7rem;
+        }
+
+        @include tab {
+            width: 62.74%;
+            margin: 0 auto;
+            font-size: 3rem;
+        }
+
+        @include phone {
+            width: 79.57%;
+            font-size: 2.5rem;
+        }
+    }
+
+    &__btn {
+        margin-left: 1rem;
+
+    }
+
+    &__arrow {
+        display: inline-block;
+        align-self: center;
+        cursor: pointer;
+
+        @include tab {
+            margin-top: 1.25rem;
+        }
+    }
+
+    &__arrow-img {
+        width: 1.8125rem;
+        height: 0.875rem;
+        fill: #fff;
+    }
+}
+
+.hamburger {
+    width: 1.5rem;
+    height: 0.25rem;
+    border-radius: 0.125rem;
+    background-color: #fff;
+    position: relative;
+    margin: 1rem 0;
+
+    cursor: pointer;
+
+    &__link {
+        cursor: pointer;
+        margin-left: 1.875rem;
+        display: none;
+
+        @include tab {
+            display: block;
+        }
+
+    }
+
+    &__wrap {
+        cursor: pointer;
+    }
+
+    &:after,
+    &:before {
+        content: '';
+        display: block;
+        width: 1.5rem;
+        height: 0.25rem;
+        border-radius: 0.125rem;
+        background-color: #fff;
+        position: absolute;
+
+    }
+
+    &:after {
+        top: 100%;
+        margin-top: 0.3125rem;
+    }
+
+    &:before {
+        bottom: 100%;
+        margin-bottom: 0.3125rem;
+    }
+}

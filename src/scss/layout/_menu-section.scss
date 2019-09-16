@@ -1,0 +1,65 @@
+.menu-section {
+    background: url(../img/menu/bg.jpg) center/cover no-repeat;
+    padding: 6.9375rem 6.375rem;
+    position: relative;
+    
+    @include tab {
+           padding: 7rem 1rem;
+        }
+
+    &__title {
+        color: #fff;
+    }
+
+    &__accordion {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        display: flex;
+        background-color: #2f3234;
+        opacity: 0.93;
+    }
+
+    &__item {
+        display: flex;
+
+        &:hover .menu-section__link {
+            color: #f9b43b;
+        }
+    }
+
+    &__link {
+        width: 5rem;
+        background: center center / cover no-repeat;
+        position: relative;
+        transition: .3s;
+    }
+
+    &__type {
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        white-space: nowrap;
+        transform: rotate(-90deg) translateY(-50%);
+        transform-origin: 0 0;
+        margin-top: -2.5rem;
+        @include gagalin();
+        font-size: 2.5rem;
+    }
+    
+    &__desc p{
+        padding: 3.875rem 2rem;        
+        width: 100%;
+        overflow: hidden;
+        
+        @include phone{
+            padding: 0.5rem;
+            font-size: 0.75rem;
+        }
+    }
+}
+
+.accordion__item--active .menu-section__link {
+    color: #f9b43b;
+}

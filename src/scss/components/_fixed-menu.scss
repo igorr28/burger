@@ -1,0 +1,45 @@
+/*** Fixed-menu ***/
+
+.fixed-menu {
+    position: fixed;
+    top: 5.625rem;
+    right: 3.125rem;
+    z-index: 10;
+    display: none;
+    
+
+    @include tab {
+        display: none;
+    }
+
+    &__item {}
+
+    &__link {
+        width: 1rem;
+        height: 1rem;
+        border-radius: 50%;
+        border: 1px solid transparent;
+        margin-bottom: 0.25rem;
+        position: relative;
+
+        &:before {
+            content: "";
+            width: 0.375rem;
+            height: 0.375rem;
+            background: #fff;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &--active {
+            border-color: #fff;
+        }
+    }
+}

@@ -1,0 +1,71 @@
+.comments {
+
+    &__list {
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        width: 25%;
+        height: 50%;
+        background: center center / cover no-repeat;
+        position: relative;
+        filter: grayscale(100%);
+
+        @include tab {
+            width: 50%;
+            height: 25%;
+        }
+
+        &:hover {
+            .comments__desc {
+                opacity: 1;
+            }
+        }
+    }
+
+    &__desc {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(20, 20, 20, 0.7);
+        padding: 2.6875rem 1.25rem 3.125rem;
+        opacity: 0;
+        transition: .3s;
+
+        @include tab {
+            text-align: center;
+            padding: 0.5rem;
+        }
+    }
+
+    &__title {
+        margin-bottom: 1.4375rem;
+
+        @include tab {
+            margin-bottom: 0.5rem;
+        }
+    }
+
+    &__text {
+        margin-bottom: 0.75rem;
+        max-height: 180px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+        @include tab {
+            max-height: 100px;
+            margin-bottom: 0.5rem;
+            line-height: 1.3;
+        }
+
+        @include media(560) {
+            max-height: 75px;
+        }
+
+    }
+
+}

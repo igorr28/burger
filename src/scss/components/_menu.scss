@@ -1,0 +1,44 @@
+/*** Navigation ***/
+
+.menu {
+    //margin: 0 15px 0 auto;
+
+    @include tab {
+        display: none;
+    }
+
+    &__list {
+        display: inline-flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0 -0.5rem;
+        text-transform: uppercase;
+        @include ubuntu(500);
+        font-size: 0.812rem;
+        color: #fff;
+    }
+
+    &__list-item {
+        display: flex;
+        align-items: center;
+        margin: 0 0.5rem;
+
+        &:after {
+            content: '';
+            display: block;
+            width: 0.25rem;
+            height: 0.25rem;
+            border-radius: 50%;
+            background-color: #fff;
+            margin-left: 1rem;
+
+//            @include media(956) {
+//                display: none;
+//            }
+        }
+
+        &:last-child:after {
+            display: none;
+        }
+    }
+}

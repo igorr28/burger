@@ -1,0 +1,126 @@
+.team {
+    background: url(../img/team/bg.jpg) center/cover no-repeat;
+    position: relative;
+
+
+    &__content {
+        width: 50%;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        background-color: #2f3234;
+        opacity: 0.93;
+        height: 100%;
+        //padding: 113px 0 113px 97px;
+        padding-left: 6.0625rem;
+
+        @include tab {
+            width: 100%;
+            left: 0;
+            padding-left: 0;
+        }
+    }
+
+    &__content-inner {
+        max-width: 23.3125rem;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        @include tab {
+            max-width: 100%;
+            text-align: center;
+        }
+    }
+
+    &__title {
+        text-align: center;
+        margin-bottom: 2.5rem;
+    }
+
+    &__accordion {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__list {
+        max-width: 21.875rem;
+    }
+
+    &__item {
+        margin-bottom: 1.5rem;
+
+        &:hover .team__member-name {
+            color: #f9b43b;
+        }
+       
+//        &:hover .team__member-name:before {
+//            transform: rotate(-180deg);
+//        }
+    }
+
+    &__member-name {
+        display: flex;
+        align-items: center;
+        margin-bottom: 0.25rem;
+        transition: .3s;
+
+        &:before {
+            content: '';
+            display: inline-block;
+            width: 0;
+            height: 0;
+            border-top: 6px solid #f9b43b;
+            border-right: 6px solid transparent;
+            border-left: 6px solid transparent;
+            margin-right: 0.5rem;
+            transition: .3s;
+        }
+    }
+
+    &__desc {
+        display: flex;
+
+        @include tab {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    &__pic {
+        width: 6.25rem;
+        height: 6.25rem;
+        overflow: hidden;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 0 0 auto;
+        margin-right: 1.25rem;
+
+        @include tab {
+            margin-right: 0;
+        }
+    }
+
+    &__img {
+        height: 6.25rem;
+        max-width: none;
+    }
+
+    &__member-occ {
+        font-weight: 700;
+        margin-bottom: 0.325rem;
+    }
+
+}
+
+.accordion__item--active .team__member-name {
+    color: #f9b43b;
+}
+
+.accordion__item--active .team__member-name:before {
+    transform: rotate(-180deg);
+}

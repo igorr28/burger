@@ -1,0 +1,75 @@
+@mixin gagalin() {
+    font-family: 'gagalinregular', sans-serif;
+    font-weight: 400;
+}
+
+@mixin lifehack() {
+    font-family: 'lifehackmedium', sans-serif;
+}
+
+@mixin ubuntu($weight) {
+    font-family: 'ubuntu', sans-serif;
+    font-weight: $weight;
+}
+
+@mixin tab {
+    @media screen and (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin phone {
+    @media screen and (max-width: 480px) {
+        @content;
+    }
+}
+
+ @mixin media($width) {
+     @media screen and (max-width: #{$width}px) {
+         @content;
+     }
+ }
+
+
+// @mixin flex($justify-content:null, $flex-direction:null) {
+//     display: flex;
+//     flex-wrap: wrap;
+//     flex-direction: $flex-direction;
+//     justify-content: $justify-content;
+// }
+
+// @mixin media($width) {
+//     @media screen and (max-width: #{$width}px) {
+//         @content;
+//     }
+// }
+
+// @mixin extra-small {
+//     @media screen and (max-width: 575px) {
+//         @content;
+//     }
+// }
+
+// @mixin small {
+//     @media screen and (max-width: 767px) {
+//         @content;
+//     }
+// }
+
+// @mixin medium {
+//     @media screen and (max-width: 991px) {
+//         @content;
+//     }
+// }
+
+// @mixin large {
+//     @media screen and (max-width: 1199px) {
+//         @content;
+//     }
+// }
+
+// @mixin extra-large {
+//     @media screen and (min-width: 1200px) {
+//         @content;
+//     }
+// }

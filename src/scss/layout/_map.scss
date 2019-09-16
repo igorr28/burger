@@ -1,0 +1,44 @@
+.map {
+   // background: url(../img/map/bg2.jpg) center/cover no-repeat;
+    position: relative;
+
+    &__container {
+        position: relative;
+        height: 100%;
+    }
+    
+    &__content{
+        width: 100%;
+        height: 100%;
+    }
+
+//    &__marker {
+//        width: 2.875rem;
+//        height: 3.5625rem;
+//        position: absolute;
+//
+//        &--one {
+//            top: 130px;
+//            left: 400px;
+//        }
+//
+//        &--two {
+//            top: 230px;
+//            left: 530px;
+//        }
+//
+//        &--three {
+//            top: 340px;
+//            left: 735px;
+//        }
+//
+//        &--four {
+//            top: 440px;
+//            left: 400px;
+//        }
+//    }
+}
+
+#map {
+    //max-width: 100%;
+}
